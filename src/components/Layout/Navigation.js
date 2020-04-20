@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, NavLink, } from "react-router-dom";
 import NavLogo from "../../assets/images/logo_small.png";
 import Home from "../home/Home";
@@ -11,28 +11,23 @@ function Navigation() {
     return (
         <>
             <Router>
-                <Navbar expand="md">
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <NavLink to="/" exact>
-                        <Navbar.Brand><img alt="Bad Pony logo" src={NavLogo} width="150" height="100" className="d-inline-block align-top" /></Navbar.Brand>
-                    </NavLink>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <NavLink to="/" exact>
-                            </NavLink>
-                            <NavLink to="/" exact id="nav-link">
-                                Home
-                            </NavLink>
+                <Navbar collapseOnSelect expand="sm" sticky="top">
+                    
+                    <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="navbar-nav ml-auto">
                             <NavLink to="/about" id="nav-link">
                                 About me
-                            </NavLink>
-                            
-                            <NavLink to="/portfolio" id="nav-link">
-                                Portfolio
                             </NavLink>
                             <NavLink to="/contact" id="nav-link">
                                 Contact
                             </NavLink>
+                            <NavLink to="/portfolio" id="nav-link">
+                                Portfolio
+                            </NavLink>
+                            
+                        </Nav>
+                        <Nav>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -41,6 +36,7 @@ function Navigation() {
                     <Route path="/about" component={About} />
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/contact" component={Contact} />
+                
                 </Switch>
             </Router>
             <footer>
