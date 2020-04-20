@@ -4,17 +4,21 @@ import { BrowserRouter as Router, Switch, Route, NavLink, } from "react-router-d
 import NavLogo from "../../assets/images/logo_small.png";
 import Home from "../home/Home";
 import About from "../about/About";
-import Portfolio from "../portfolio/Portfolio";
 import Contact from "../contact/Contact";
+import Portfolio from "../portfolio/Portfolio";
+import Webdesign from "../portfolio/categories/WebDesign";
+import GraphicDesign from "../portfolio/categories/GraphicDesign";
 
 function Navigation() {
     return (
         <>
             <Router>
                 <Navbar collapseOnSelect expand="sm" sticky="top">
-                    
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
+                        <NavLink to="/" exact>
+                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogo} width="150" height="80" className="d-inline-block align-top" /></Navbar.Brand>
+                        </NavLink>
                         <Nav className="navbar-nav ml-auto">
                             <NavLink to="/about" id="nav-link">
                                 About me
@@ -22,10 +26,18 @@ function Navigation() {
                             <NavLink to="/contact" id="nav-link">
                                 Contact
                             </NavLink>
-                            <NavLink to="/portfolio" id="nav-link">
-                                Portfolio
-                            </NavLink>
-                            
+                            <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
+                                <NavDropdown.Item href="/portfolio" id="nav-link">Information</NavDropdown.Item>
+
+                                <NavDropdown.Item href="/webdesign" id="nav-link">Webdesign</NavDropdown.Item>
+
+                                <NavDropdown.Item href="/graphicdesign" id="nav-link">Graphic Designs</NavDropdown.Item>
+
+                                <NavDropdown.Item href="/photo" id="nav-link">Photography</NavDropdown.Item>
+
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="/other" id="nav-link">Other</NavDropdown.Item>
+                            </NavDropdown>
                         </Nav>
                         <Nav>
                         </Nav>
@@ -34,8 +46,11 @@ function Navigation() {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact}/>
+
                     <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/contact" component={Contact} />
+                    <Route path="/webdesign" component={Webdesign} />
+                    <Route path="/graphicdesign" component={GraphicDesign} />
                 
                 </Switch>
             </Router>
