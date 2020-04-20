@@ -13,18 +13,18 @@ function Navigation() {
     return (
         <>
             <Router>
-                <Navbar collapseOnSelect expand="sm" sticky="top">
+                <Navbar collapseOnSelect expand="sm">
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+                    <NavLink to="/" exact>
+                    <img alt="" src={NavLogo} width="100" height="80" className="second-brand" />
+                    </NavLink>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <NavLink to="/" exact>
                             <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogo} width="150" height="80" className="d-inline-block align-top" /></Navbar.Brand>
                         </NavLink>
-                        <Nav className="navbar-nav ml-auto">
+                        <Nav className="navbar-nav ml-auto theNavlinks">
                             <NavLink to="/about" id="nav-link">
                                 About me
-                            </NavLink>
-                            <NavLink to="/contact" id="nav-link">
-                                Contact
                             </NavLink>
                             <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/portfolio" id="nav-link">Information</NavDropdown.Item>
@@ -38,6 +38,9 @@ function Navigation() {
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="/other" id="nav-link">Other</NavDropdown.Item>
                             </NavDropdown>
+                            <NavLink to="/contact" id="nav-link">
+                                Contact
+                            </NavLink>
                         </Nav>
                         <Nav>
                         </Nav>
