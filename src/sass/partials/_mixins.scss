@@ -1,0 +1,50 @@
+@mixin gradientDark {
+    background: linear-gradient(84deg, #272424, #2c202c, #272424);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0% {
+            background-position: 0% 22%
+        }
+
+        50% {
+            background-position: 100% 79%
+        }
+
+        100% {
+            background-position: 0% 22%
+        }
+    }
+
+    @-moz-keyframes AnimationName {
+        0% {
+            background-position: 0% 22%
+        }
+
+        50% {
+            background-position: 100% 79%
+        }
+
+        100% {
+            background-position: 0% 22%
+        }
+    }
+
+    @keyframes AnimationName {
+        0% {
+            background-position: 0% 22%
+        }
+
+        50% {
+            background-position: 100% 79%
+        }
+
+        100% {
+            background-position: 0% 22%
+        }
+    }
+}
