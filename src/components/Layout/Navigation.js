@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, NavLink, } from "react-router-dom";
 import NavLogo from "../../assets/images/logo_small.png";
+import NavLogoText from "../../assets/images/logo_text_only_small.png";
 import Home from "../home/Home";
 import About from "../about/About";
 import Contact from "../contact/Contact";
@@ -13,14 +14,14 @@ function Navigation() {
     return (
         <>
             <Router>
-                <Navbar collapseOnSelect expand="sm">
+                <Navbar collapseOnSelect expand="sm" >
                     <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
                     <NavLink to="/" exact>
-                    <img alt="" src={NavLogo} width="100" height="80" className="second-brand" />
+                    <img alt="" src={NavLogo} width="120" height="80" className="second-brand" />
                     </NavLink>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <NavLink to="/" exact>
-                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogo} width="150" height="80" className="d-inline-block align-top" /></Navbar.Brand>
+                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogoText} width="100" height="25" className="d-inline-block align-top" /></Navbar.Brand>
                         </NavLink>
                         <Nav className="navbar-nav ml-auto theNavlinks">
                             <NavLink to="/about" id="nav-link">

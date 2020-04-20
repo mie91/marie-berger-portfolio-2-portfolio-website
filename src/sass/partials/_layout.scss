@@ -1,21 +1,17 @@
 .navbar {
     background-color: transparent;
+    padding: 5px;
+    
 
-}
-
-.navbar-brand {
-    padding: 10px;
 }
 
 .theNavlinks {
-    
 
     #nav-link, .dropdown {
         color: $magenta;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin: 10px;
-        margin-top: 30px;
     
         &.active {
             text-decoration: underline;
@@ -52,13 +48,13 @@
 }
 
 //MEDIA QUIERIES//
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 577px) {
     .second-brand {
         display: none;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 577px) {
     span.navbar-brand {
         display: none;
     }

@@ -1,0 +1,14 @@
+
+.main-container {
+    margin-top: -220px;
+    padding-top: 220px;
+
+    &.dark-gradient {
+        @include dark-gradient;
+    }
+
+    &.dark {
+        background-color: $dark;
+        color: $bright
+    }
+}
