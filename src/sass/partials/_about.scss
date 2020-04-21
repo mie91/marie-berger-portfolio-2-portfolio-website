@@ -1,39 +1,77 @@
+div.about {
+    margin: 30px 0px;
+    padding: 30px 0px;
+    border-top: solid 3px $purple;
+    border-bottom: solid 3px $purple;
+}
+
+
 .skills-list {
     padding-left: 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
     
-    letter-spacing: 3px;
     li {
         display: inline-flex;
         background-color: $purple;
         padding: 5px;
-        border-radius: 5px;
         margin: 5px;
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        
     }
 
     li:nth-child(odd) {
         background: $bright;
         color: $dark;
+    }    
+}
+
+.info-list {
+    padding-left: 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    
+
+    li {
+        display: inline-flex;
+        background-color: $purple;
+        padding: 5px;
+        margin: 5px;
+
+
+        
     }
 
-    
+    li:nth-child(even) {
+        background: $bright;
+        color: $dark;
+    }
+
+
 }
+
+
+
 
 .aboutAccord {
     
     .card {
         border: none;
-        border-left: solid 1px $bright;
+        border-radius: 1px;
         background-color: transparent;
-        margin-top: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-left: solid 5px $purple;
+
+        &:hover {
+            border-left: solid 5px $bright;
+            color: $bright;
+        }
         
     }
 
     .card-header {
-
-        
+    background-color: transparent;
+    border:none;
         
     }
 }
