@@ -14,8 +14,28 @@
         color: $bright
     }
 
+    .text-box {
+        
+        .mainHeader {
+            font-family: $headerFont;
+            text-transform: uppercase;
+            color: $magenta;
+            letter-spacing: 5px;
+            font-size: 2.5em;
+        }
+
+        .subHeader {
+            font-family: $headerFont;
+            text-transform: uppercase;
+            color: $purple;
+            letter-spacing: 5px;
+            font-size: 1.8em;
+        }
+    }
+
 
 }
+
 
 
 

@@ -1,0 +1,22 @@
+.skills-list {
+    padding-left: 0;
+    
+    letter-spacing: 3px;
+    li {
+        display: inline-flex;
+        background-color: $purple;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 5px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    li:nth-child(odd) {
+        background: $bright;
+        color: $dark;
+    }
+
+    
+}
