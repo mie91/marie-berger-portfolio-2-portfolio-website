@@ -20,29 +20,29 @@ return (
                     <p>Reprehenderit qui nulla Lorem nisi non ut nulla consequat. Sit voluptate adipisicing consectetur elit nulla qui do pariatur pariatur esse.</p>
                    
                     
-                            <Accordion defaultActiveKey="0">
-                                <SubHeader title="Skills" />
+                            <Accordion defaultActiveKey="0" className="aboutAccord">
+                                
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} eventKey="1">
-                                         Show
+                                        <SubHeader title="Skills" />
                             </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="1">
-                                        <Card.Body>Hello! I'm the body</Card.Body>
+                                        <Card.Body>Quis ex est laboris eiusmod cupidatat. Magna sit velit cupidatat laboris. Officia deserunt dolore minim aliquip mollit duis culpa ad. In incididunt occaecat aute ex ullamco aute. Ipsum dolore nulla elit adipisicing dolor esse exercitation cupidatat eiusmod nulla.</Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
-                                <SubHeader title="Interests" />
+                                
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} eventKey="2">
-                                        Show
+                                        <SubHeader title="Interests" />
                             </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="2">
                                         <Card.Body>Hello! I'm another body</Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
-                                <SubHeader title="Education" />
+                                
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} eventKey="3">
-                                        Show
+                                        <SubHeader title="Education" />
                             </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="3">
                                         <Card.Body>Hello! I'm another body</Card.Body>
