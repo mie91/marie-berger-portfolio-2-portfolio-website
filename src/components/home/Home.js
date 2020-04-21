@@ -1,7 +1,5 @@
 import React from 'react';
-import { Container, Col, Row, Jumbotron, Image } from "react-bootstrap";
-import MainHeader from "../layout/MainHeader";
-import SubHeader from "../layout/SubHeader";
+import { Container, Col, Row, Image } from "react-bootstrap";
 import HugeLogo from "../../assets/images/logo_huge.png";
 
 function Home () {

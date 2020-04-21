@@ -1,25 +1,23 @@
 .navbar {
     background-color: transparent;
     padding: 5px;
-    
-
 }
 
 .theNavlinks {
-
     #nav-link, .dropdown {
-        color: $magenta;
+        color: $purple;
         letter-spacing: 5px;
         text-transform: uppercase;
         margin: 10px;
     
         &.active {
-            text-decoration: underline;
+            text-decoration: underline !important;
             color: $bright;
         }
 
         &:hover {
             color: $bright;
+            text-decoration: none;
         }
     }
 
@@ -41,10 +39,15 @@
 
 //FOOTER//
 .footercontent {
-    background-color: $dark;
-    padding: 20px;
+    background-color: transparent;
+    padding: 10px;
+    margin-top: 10px;
     text-align: center;
-    color: $pink;
+    color: rgba($color: $pink, $alpha: 0.3);
+
+    p:hover {
+        color: $magenta;
+    }
 }
 
 //MEDIA QUIERIES//
@@ -57,6 +60,10 @@
 @media screen and (max-width: 577px) {
     span.navbar-brand {
         display: none;
+    }
+
+    .second-brand {
+        padding: 10px;
     }
 
     .theNavlinks {
