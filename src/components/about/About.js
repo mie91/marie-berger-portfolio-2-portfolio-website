@@ -19,7 +19,7 @@ return (
             <div className="about">
                     <MainHeader title="about" />
                     <Row className="justify-content-md-center">
-                        <Col className="col-md-5 ">
+                        <Col className="col-md-5 accordion-col">
                     <div className="text-box">
                                 
                         <Accordion defaultActiveKey="0" className="aboutAccord">
@@ -95,7 +95,7 @@ return (
                     </div>
 
                     </Col>
-                        <Col className="col-md-4">
+                        <Col className="col-md-4 info-col">
                             
                     <div className="profileImage d-flex justify-content-center">
                         <Image fluid src={Profile1} alt="Employees at Re-Cycle office" />
