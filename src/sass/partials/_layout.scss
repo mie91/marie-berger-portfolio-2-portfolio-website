@@ -3,6 +3,10 @@
     padding: 7px;
 }
 
+.navbar-toggler, .collapsed {
+    background-color: rgba(128, 102, 138, 0.2);
+} 
+
 .theNavlinks {
     #nav-link, .dropdown {
         color: $purple;

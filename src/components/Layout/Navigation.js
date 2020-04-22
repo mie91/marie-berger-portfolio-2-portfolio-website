@@ -15,7 +15,7 @@ function Navigation() {
         <>
             <Router>
                 <Navbar collapseOnSelect expand="sm" >
-                    <Navbar.Toggle  aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle  aria-controls="responsive-navbar-nav " />
                     <NavLink to="/" exact>
                     <img alt="" src={NavLogo} width="120" height="80" className="second-brand" />
                     </NavLink>

@@ -3,23 +3,23 @@
     background: linear-gradient(84deg, #272424, #161215, #272424);
     background-size: 600% 600%;
 
-    -webkit-animation: AnimationName 9s ease infinite;
-    -moz-animation: AnimationName 9s ease infinite;
-    animation: AnimationName 9s ease infinite;
+    -webkit-animation: dark-gradient 9s ease infinite;
+    -moz-animation: dark-gradient 9s ease infinite;
+    animation: dark-gradient 9s ease infinite;
 
-    @-webkit-keyframes AnimationName {
+    @-webkit-keyframes dark-gradient {
         0% { background-position: 0% 22%}
         50% {background-position: 100% 79%}
         100% {background-position: 0% 22%}
     }
 
-    @-moz-keyframes AnimationName {
+    @-moz-keyframes dark-gradient {
         0% { background-position: 0% 22%}
         50% {background-position: 100% 79%}
         100% {background-position: 0% 22%}
     }
 
-    @keyframes AnimationName {
+    @keyframes dark-gradient {
         0% { background-position: 0% 22%}
         50% {background-position: 100% 79%}
         100% {background-position: 0% 22%}
@@ -27,10 +27,24 @@
 }
 
 
-//Animated Beat
-@keyframes beatHeart {
+
+//Animated size increased
+@keyframes bigger {
     0% {transform: scale(0.05);}
     100% {transform: scale(1.0);}
+}
+//Animated Beat
+@keyframes beat {
+    0% {
+        transform: scale(1.0);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+
+    70% {
+        transform: scale(1.0);
+    }
 }
 
 
@@ -54,7 +68,16 @@
 @mixin basic-shadow {
     filter: drop-shadow(7px 7px 7px #000000);
     -webkit-filter: drop-shadow(7px 7px 7px #000000);
-     position:relative
+    
 }
 
+//Spin animation//
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,11 +1,11 @@
 .about {
     margin: 30px 0px;
-    padding: 30px 0px;
+    padding: 30px 10px;
     background-color: none;
     @include basic-shadow;
     background: $dark-lighter-gradient;
     border-radius: 20px;
-    animation: 1s 1 beatHeart;
+    animation: 1s 1 bigger;
     
     .mainHeader {
         margin-bottom: 4vw;
