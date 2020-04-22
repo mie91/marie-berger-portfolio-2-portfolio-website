@@ -1,7 +1,7 @@
 
 .main-container {
-    margin-top: -420px;
-    padding-top: 420px;
+    margin-top: -720px;
+    padding-top: 720px;
     margin-bottom: -200px;
     padding-bottom: 200px;
 
@@ -17,6 +17,23 @@
     .mainHeader {
         text-align: center;
     }
+}
+
+
+.content-box {
+    margin: 30px 0px;
+    padding: 30px 15px;
+    background-color: none;
+    @include basic-shadow;
+    background: $dark-lighter-gradient;
+    border-radius: 20px;
+    animation: 1s 1 bigger;
+
+    .mainHeader {
+        margin-bottom: 3vw;
+        text-transform: none;
+    }
+    
 }
 
 .icon-container {

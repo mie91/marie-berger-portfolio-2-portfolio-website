@@ -4,7 +4,7 @@
 }
 
 .navbar-toggler, .collapsed {
-    background-color: rgba(128, 102, 138, 0.2);
+    background-color: rgba($color: $magenta, $alpha: 0.4)
 } 
 
 .theNavlinks {
@@ -45,6 +45,13 @@
 span.navbar-brand {
     padding: 10px;
 }
+
+
+.dropdown-menu.show {
+    background-color: transparent;
+    border: none;
+}
+
 
 
 //FOOTER//

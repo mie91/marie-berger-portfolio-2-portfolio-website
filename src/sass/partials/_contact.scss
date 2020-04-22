@@ -1,0 +1,78 @@
+//ERROR MESSAGE//
+.errorMessage {
+    color: $magenta;
+    text-align: right;
+    border-bottom: $basic-magenta;
+}
+
+//VALIDATION MESSAGE//
+.formValidated {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    color: $pink;
+
+}
+
+div.formBox {
+    color: $pink;
+
+    .form-control {
+
+
+        background-color: transparent;
+        border: none;
+        border-radius: 0%;
+        border-bottom: $basic-purple;
+        color: $bright;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom: $basic-bright;
+        }
+    }
+
+    :-webkit-autofill {
+        -webkit-animation-delay: 1s;
+        -webkit-animation-name: autofill;
+        -webkit-animation-fill-mode: both;
+    }
+
+}
+
+
+
+
+
+.formButton {
+    background-color: $magenta;
+    padding: 15px;
+    color: $bright;
+    border: none;
+    border-radius: 2px;
+    float: right;
+    @include basic-shadow;
+    transition: $basic-transition;
+
+    &:hover {
+        background-color: $bright;
+        color: $dark;
+        text-decoration: none;
+        border: none;
+        transition: $basic-transition;
+
+    }
+
+    &:focus {
+        background-color: $bright;
+        color: $dark;
+    }
+
+    &:active {
+        background-color: $pink !important;
+        color: $bright;
+        text-decoration: none;
+        border: none;
+    }
+}

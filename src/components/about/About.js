@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row, Jumbotron, Image, Card, Accordion } from "react-bootstrap";
+import { Container, Col, Row, Image, Card, Accordion } from "react-bootstrap";
 import MainHeader from "../layout/MainHeader";
 import SubHeader from "../layout/SubHeader";
 import BackToTop from "../layout/BackToTop";
@@ -17,7 +17,7 @@ return (
             
         <Container>
                 
-            <div className="about">
+                <div className="content-box content-box-about">
                     <MainHeader title="about" />
                     <Row className="justify-content-md-center">
                         <Col className="col-md-5 accordion-col">
