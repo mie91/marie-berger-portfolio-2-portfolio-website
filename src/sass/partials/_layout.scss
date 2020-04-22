@@ -1,6 +1,6 @@
 .navbar {
     background-color: transparent;
-    padding: 5px;
+    padding: 7px;
 }
 
 .theNavlinks {
@@ -8,30 +8,32 @@
         color: $purple;
         letter-spacing: 5px;
         text-transform: uppercase;
-        margin: 10px;
+        margin: 15px;
+        
+        transition: $basic-transition;
     
         &.active {
-            text-decoration: underline !important;
-            color: $bright;
+            color: $magenta;
         }
 
         &:hover {
             color: $bright;
             text-decoration: none;
+            transition: $basic-transition;
         }
     }
 
     .dropdown-toggle.nav-link {
         padding: 0px;
         margin: 0px 10px;
-        color: $magenta;
+        color: $purple;
         &.active {
-            text-decoration: underline;
-            color: $bright;
+            color: $magenta;
         }
 
         &:hover {
             color: $bright;
+            transition: 0.6s ease-in-out;
         }
     }
 }

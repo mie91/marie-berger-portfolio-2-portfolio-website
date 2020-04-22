@@ -1,8 +1,8 @@
 div.about {
     margin: 30px 0px;
     padding: 30px 0px;
-    border-top: solid 3px $purple;
-    border-bottom: solid 3px $purple;
+    animation: 1s 1 beatHeart;
+    @include basic-shadow;
 }
 
 
@@ -10,6 +10,7 @@ div.about {
     padding-left: 0;
     font-size: 0.8em;
     letter-spacing: 2px;
+    
     
     li {
         display: inline-flex;
@@ -30,15 +31,13 @@ div.about {
     font-size: 0.8em;
     letter-spacing: 2px;
     
+    
 
     li {
         display: inline-flex;
         background-color: $purple;
         padding: 5px;
-        margin: 5px;
-
-
-        
+        margin: 5px; 
     }
 
     li:nth-child(even) {
@@ -46,14 +45,23 @@ div.about {
         color: $dark;
     }
 
-
+    
 }
 
 
 
 
 .aboutAccord {
-    
+
+    .subHeader {
+        transition: $basic-transition;
+        &:hover {
+            color: $bright;
+            transform: translatex(5%);
+            transition: $basic-transition;
+            
+        }
+    }
     .card {
         border: none;
         border-radius: 1px;
@@ -61,17 +69,22 @@ div.about {
         margin-top: 10px;
         cursor: pointer;
         border-left: solid 5px $purple;
+        transition: $basic-transition;
 
-        &:hover {
+        &:hover{
             border-left: solid 5px $bright;
             color: $bright;
+            transition: $basic-transition;
         }
         
     }
 
-    .card-header {
-    background-color: transparent;
-    border:none;
-        
+    div.card-header {
+        background-color: transparent;
+        border:none;
     }
+
+   
+
 }
+

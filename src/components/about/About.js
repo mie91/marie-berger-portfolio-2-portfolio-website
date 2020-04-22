@@ -22,10 +22,10 @@ return (
                                 <SubHeader title="Skills" />
                             </Accordion.Toggle>
                             <Accordion.Collapse eventKey="1">
-                                <Card.Body>Quis ex est laboris eiusmod cupidatat. Magna sit velit cupidatat laboris.
-                                    Officia deserunt dolore minim aliquip mollit duis culpa ad. In incididunt occaecat
-                                    aute ex ullamco aute. Ipsum dolore nulla elit adipisicing dolor esse exercitation
-                                    cupidatat eiusmod nulla.</Card.Body>
+                                            <Card.Body> <p>Quis ex est laboris eiusmod cupidatat. Magna sit velit cupidatat laboris.
+                                            Officia deserunt dolore minim aliquip mollit duis culpa ad. In incididunt occaecat
+                                            aute ex ullamco aute. Ipsum dolore nulla elit adipisicing dolor esse exercitation
+                                    cupidatat eiusmod nulla.</p></Card.Body>
                             </Accordion.Collapse>
                         </Card>
 
