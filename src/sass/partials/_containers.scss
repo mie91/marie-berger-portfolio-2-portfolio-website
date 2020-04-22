@@ -14,30 +14,17 @@
         color: $bright
     }
 
-    .text-box {
-        
-        .mainHeader {
-            font-family: $headerFont;
-            text-transform: uppercase;
-            color: $magenta;
-            letter-spacing: 10px;
-            font-size: 3em;
-            
-        }
-
-        .subHeader {
-            font-family: $headerFont;
-            text-transform: uppercase;
-            color: $purple;
-            letter-spacing: 5px;
-            font-size: 1.8em;
-            
-        }
+    .mainHeader {
+        text-align: center;
     }
-
-
 }
 
+.icon-container {
+    a {
+        display: inline-flex;
+        margin: 0px 20px 0px 0px;
+    }
+}
 
 
 

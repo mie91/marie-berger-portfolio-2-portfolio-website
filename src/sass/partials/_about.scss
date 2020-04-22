@@ -1,23 +1,28 @@
-div.about {
+.about {
     margin: 30px 0px;
     padding: 30px 0px;
-    animation: 1s 1 beatHeart;
+    background-color: none;
     @include basic-shadow;
+    background: $dark-lighter-gradient;
+    border-radius: 20px;
+    animation: 1s 1 beatHeart;
+    
+    .mainHeader {
+        margin-bottom: 4vw;
+        text-transform: none;   
+    }
 }
-
 
 .skills-list {
     padding-left: 0;
     font-size: 0.8em;
     letter-spacing: 2px;
     
-    
     li {
         display: inline-flex;
         background-color: $purple;
         padding: 5px;
         margin: 5px;
-        
     }
 
     li:nth-child(odd) {
@@ -30,31 +35,27 @@ div.about {
     padding-left: 0;
     font-size: 0.8em;
     letter-spacing: 2px;
-    
-    
 
     li {
         display: inline-flex;
         background-color: $purple;
-        padding: 5px;
-        margin: 5px; 
+        padding: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
     }
 
     li:nth-child(even) {
         background: $bright;
         color: $dark;
     }
-
-    
 }
-
-
 
 
 .aboutAccord {
 
     .subHeader {
         transition: $basic-transition;
+        
         &:hover {
             color: $bright;
             transform: translatex(5%);
@@ -70,6 +71,7 @@ div.about {
         cursor: pointer;
         border-left: solid 5px $purple;
         transition: $basic-transition;
+        
 
         &:hover{
             border-left: solid 5px $bright;

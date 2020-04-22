@@ -16,3 +16,12 @@ Removing dropdown menu for Portfolio:
     <NavDropdown.Divider />
     <NavDropdown.Item href="/portfolio" id="nav-link">Photography</NavDropdown.Item>
 </NavDropdown>
+
+
+
+Removed list in "about".
+<SubHeader title="Information" />
+                                <ul className="info-list">
+                                    <li><b>Location</b>: Bergen, Norway</li>
+                                    <li><b>Birthdate</b>: 02-09-1991</li>
+                                </ul>
