@@ -84,3 +84,34 @@ span.navbar-brand {
     }
 
 }
+
+
+//BACK TO TOP BUTTON//
+.to-top-container {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.return-top-btn {
+    background-color: rgba($color: $bright, $alpha: 0.1);
+    padding: 5px;
+    border:none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+
+    &:hover {
+        background-color: rgba($color: $bright, $alpha: 0.2);
+        animation-name: beat;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;  
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}

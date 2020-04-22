@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Col, Row, Jumbotron, Image, Card, Accordion } from "react-bootstrap";
 import MainHeader from "../layout/MainHeader";
 import SubHeader from "../layout/SubHeader";
+import BackToTop from "../layout/BackToTop";
 import Profile1 from "../../assets/images/profileimg.jpg"
 import Instagram from "../../assets/icons/instagram.png";
 import Facebook from "../../assets/icons/facebook.png";
@@ -134,11 +135,15 @@ return (
                     </div>
 
                     </Col>
+                    
                 </Row>
+                
             </div>
+            < BackToTop/>
         </Container>
 
     </div>
+    
 </>
 );
 }
