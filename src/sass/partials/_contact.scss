@@ -7,7 +7,7 @@
     padding: 5px;
     transition: $basic-transition;
     animation-name: bigger;
-    animation-duration: 200ms;
+    animation-duration: 250ms;
     animation-iteration-count: 1;
     animation-timing-function: linear;
 
@@ -44,7 +44,7 @@ div.formBox {
         }
 
         &::placeholder {
-            color: $bright;
+            color: rgba($color: $bright, $alpha: 0.6)
             
         }
     }

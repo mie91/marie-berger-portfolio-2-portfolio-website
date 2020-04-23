@@ -93,7 +93,7 @@ function Contact() {
                                 <Row className="justify-content-md-center">
                                     <Col className="col-md-6">
                                         {validated && <div className="formValidated">Your request was validated!</div>}
-                                        <Button className="formButton" type="submit">Submit</Button>
+                                        <Button className="formButton" type="submit">Send</Button>
                                         
                                     </Col>
                                 </Row>

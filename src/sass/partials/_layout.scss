@@ -13,8 +13,7 @@
         letter-spacing: 5px;
         text-transform: lowercase;
         margin: 15px;
-        font-weight: 600;
-        
+        font-weight: 600;   
         transition: $basic-transition;
     
         &.active {
@@ -25,9 +24,21 @@
             color: $bright;
             text-decoration: none;
             transition: $basic-transition;
-            transform: translatex(2%);
-            transition: $basic-transition;
+            
         }
+    }
+
+    .dropdown-item {
+        border-left: $basic-purple;
+        
+        &:hover{
+            background-color: transparent;
+            border-left: $basic-bright;
+            transform: translatex(5%);
+            transition: $basic-transition;
+        } 
+
+        
     }
 
     .dropdown-toggle.nav-link {
@@ -42,6 +53,11 @@
             color: $bright;
             transition: 0.6s ease-in-out;
         }
+
+        &:focus {
+            color: $bright;
+            transition: 0.6s ease-in-out;
+        }
     }
 }
 
@@ -51,7 +67,7 @@ span.navbar-brand {
 
 
 .dropdown-menu.show {
-    background-color: transparent;
+    background-color: $dark;
     border: none;
 }
 
@@ -92,6 +108,10 @@ span.navbar-brand {
             margin: 10px 0px;
         }
     }
+
+     .dropdown-menu.show {
+        background-color: transparent;
+     }
 
 }
 

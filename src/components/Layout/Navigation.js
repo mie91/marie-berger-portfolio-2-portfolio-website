@@ -21,24 +21,24 @@ function Navigation() {
                     </NavLink>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <NavLink to="/" exact>
-                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogoText} width="100" height="25" className="d-inline-block align-top" /></Navbar.Brand>
+                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogoText} width="110" height="25" className="d-inline-block align-top" /></Navbar.Brand>
                         </NavLink>
                         <Nav className="navbar-nav ml-auto theNavlinks">
-                            <NavLink to="/about" id="nav-link">
-                                About me
-                            </NavLink>
                             <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="/portfolio" id="nav-link">Information</NavDropdown.Item>
-
+                            
                                 <NavDropdown.Item href="/webdesign" id="nav-link">Webdesign</NavDropdown.Item>
 
                                 <NavDropdown.Item href="/graphicdesign" id="nav-link">Graphic Designs</NavDropdown.Item>
 
                                 <NavDropdown.Item href="/photo" id="nav-link">Photography</NavDropdown.Item>
 
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="/other" id="nav-link">Other</NavDropdown.Item>
+                                
+                                <NavDropdown.Item href="/other" id="nav-link">Digital Art</NavDropdown.Item>
                             </NavDropdown>
+                            <NavLink to="/about" id="nav-link">
+                                About me
+                            </NavLink>
+                            
                             <NavLink to="/contact" id="nav-link">
                                 Contact
                             </NavLink>
