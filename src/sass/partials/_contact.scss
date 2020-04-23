@@ -1,8 +1,16 @@
 //ERROR MESSAGE//
 .errorMessage {
-    color: $magenta;
+    color: $pink;
     text-align: right;
-    border-bottom: $basic-magenta;
+    border-right: $basic-purple;
+    font-family: $headerFont;
+    padding: 5px;
+    transition: $basic-transition;
+    animation-name: bigger;
+    animation-duration: 200ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
 }
 
 //VALIDATION MESSAGE//
@@ -16,27 +24,36 @@
 
 div.formBox {
     color: $pink;
+    font-family: $headerFont;
 
     .form-control {
-
 
         background-color: transparent;
         border: none;
         border-radius: 0%;
         border-bottom: $basic-purple;
         color: $bright;
+        padding: 2px;
+        
 
         &:focus {
             outline: none;
             box-shadow: none;
             border-bottom: $basic-bright;
+            
+        }
+
+        &::placeholder {
+            color: $bright;
+            
         }
     }
 
     :-webkit-autofill {
-        -webkit-animation-delay: 1s;
-        -webkit-animation-name: autofill;
-        -webkit-animation-fill-mode: both;
+        animation-delay: 1s;
+        animation-name: autofill;
+        animation-fill-mode: both;
+        
     }
 
 }

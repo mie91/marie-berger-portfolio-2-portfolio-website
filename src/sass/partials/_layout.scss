@@ -11,8 +11,9 @@
     #nav-link, .dropdown {
         color: $purple;
         letter-spacing: 5px;
-        text-transform: uppercase;
+        text-transform: lowercase;
         margin: 15px;
+        font-weight: 600;
         
         transition: $basic-transition;
     
@@ -23,6 +24,8 @@
         &:hover {
             color: $bright;
             text-decoration: none;
+            transition: $basic-transition;
+            transform: translatex(2%);
             transition: $basic-transition;
         }
     }
