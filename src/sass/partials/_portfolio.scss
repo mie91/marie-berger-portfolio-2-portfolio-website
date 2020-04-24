@@ -1,28 +1,56 @@
 //PORTAL MAIN PAGE/////
 .content-box-portfolio-portal {
+    background-color: $magenta;
     .subHeader {
         text-align: center;
     }
 }
 
-
-.project-thumbnails-container{
-    
+.card.portfolio-portal-card {
     text-align: center;
+    
+    margin: 10px;
+    margin-bottom: 4vw;
+    padding: 0px;
+    max-width: 280px;
+    background: transparent;
+    border: none;
+    @include basic-shadow;
+    
+
+    .card-body {
+        padding: 5px;   
+    }
+
     img {
-        width: 300px;
-        margin: 10px;
-        border: $basic-bright;
-    }
-        img:hover {
-           animation-name: beat;
-           animation-duration: 1500ms;
-           animation-iteration-count: 3;
-           animation-timing-function: linear;
+        border:none;
+        border-radius: 15px;
+        transition: $basic-transition;
 
+        &:hover {
+             border: $basic-purple;
         }
+
     }
 
+    .subHeader {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 1.5em;
+        color: $bright;
+    }
+
+    &:hover {
+        transform: translatey(5%);
+        transition: $basic-transition;
+       
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+    
+}
 
 
 
@@ -36,12 +64,5 @@
 @media screen and (min-width: 577px) {}
 
 @media screen and (max-width: 577px) {
-    .project-thumbnails-container {
-
-
-        img {
-            width: 200px;
-        }
-
-    }
+    
 }
