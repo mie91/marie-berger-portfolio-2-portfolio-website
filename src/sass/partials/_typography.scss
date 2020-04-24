@@ -12,3 +12,20 @@
      font-size: 1.8em;
 
  }
+
+
+ //MEDIA QUIERIES//
+ @media screen and (min-width: 577px) {}
+
+ @media screen and (max-width: 577px) {
+.mainHeader {
+    font-size: 3.4em;
+}
+
+.subHeader {
+    font-size: 1.5em;
+
+}
+
+
+ }

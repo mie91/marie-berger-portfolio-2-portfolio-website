@@ -6,9 +6,8 @@ import NavLogoText from "../../assets/images/logo_text_only_small.png";
 import Home from "../home/Home";
 import About from "../about/About";
 import Contact from "../contact/Contact";
-import Portfolio from "../portfolio/Portfolio";
-import Webdesign from "../portfolio/categories/WebDesign";
-import GraphicDesign from "../portfolio/categories/GraphicDesign";
+import Webdesign from "../portfolio/webDesign/WebDesign";
+import GraphicDesign from "../portfolio/graphicDesign/GraphicDesign";
 
 function Navigation() {
     return (
@@ -30,10 +29,10 @@ function Navigation() {
 
                                 <NavDropdown.Item href="/graphicdesign" id="nav-link">Graphic Designs</NavDropdown.Item>
 
-                                <NavDropdown.Item href="/photo" id="nav-link">Photography</NavDropdown.Item>
+                                <NavDropdown.Item disabled href="/photo" id="nav-link">Photo (coming soon)</NavDropdown.Item>
 
                                 
-                                <NavDropdown.Item href="/other" id="nav-link">Digital Art</NavDropdown.Item>
+                                <NavDropdown.Item disabled href="/other" id="nav-link">Art (coming soon)</NavDropdown.Item>
                             </NavDropdown>
                             <NavLink to="/about" id="nav-link">
                                 About me
@@ -51,8 +50,6 @@ function Navigation() {
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact}/>
-
-                    <Route path="/portfolio" component={Portfolio} />
                     <Route path="/webdesign" component={Webdesign} />
                     <Route path="/graphicdesign" component={GraphicDesign} />
                 

@@ -1,0 +1,47 @@
+//PORTAL MAIN PAGE/////
+.content-box-portfolio-portal {
+    .subHeader {
+        text-align: center;
+    }
+}
+
+
+.project-thumbnails-container{
+    
+    text-align: center;
+    img {
+        width: 300px;
+        margin: 10px;
+        border: $basic-bright;
+    }
+        img:hover {
+           animation-name: beat;
+           animation-duration: 1500ms;
+           animation-iteration-count: 3;
+           animation-timing-function: linear;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+//MEDIA QUIERIES//
+@media screen and (min-width: 577px) {}
+
+@media screen and (max-width: 577px) {
+    .project-thumbnails-container {
+
+
+        img {
+            width: 200px;
+        }
+
+    }
+}
