@@ -1,6 +1,6 @@
 //PORTAL MAIN PAGE/////
 .content-box-portfolio-portal {
-    
+
     .subHeader {
         text-align: center;
         color: $purple;
@@ -9,7 +9,7 @@
 
 .card.portfolio-portal-card {
     text-align: center;
-    
+
     margin: 10px;
     margin-bottom: 4vw;
     padding: 0px;
@@ -17,19 +17,15 @@
     background: transparent;
     border: none;
     @include basic-shadow;
-    
 
     .card-body {
-        padding: 5px;   
+        padding: 5px;
     }
 
     img {
-        border:none;
+        border: none;
         border-radius: 15px;
         transition: $basic-transition;
-
-       
-
     }
 
     .subHeader {
@@ -48,16 +44,27 @@
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         z-index: 999;
-       
     }
-
-    
 
     a:hover {
         text-decoration: none;
     }
-    
 }
+
+
+
+//PORTFOLIO ELEMENT PAGES//
+.content-box.content-box-portfolio{
+    text-align: center;
+
+    .mainHeader {
+        margin-bottom: 2px;
+    }
+}
+
+
+
+
 
 
 
@@ -70,6 +77,4 @@
 //MEDIA QUIERIES//
 @media screen and (min-width: 577px) {}
 
-@media screen and (max-width: 577px) {
-    
-}
+@media screen and (max-width: 577px) {}

@@ -18,7 +18,7 @@ return (
                     <Row className="justify-content-center">
 
                         <Card className="portfolio-portal-card">
-                            <a href="/"><Card.Img variant="top" src={Recycle} alt="screenshot from project" />
+                            <a href="/recycle"><Card.Img variant="top" src={Recycle} alt="screenshot from project" />
                                 <Card.Body>
                                    <SubHeader title="Re-Cycle"/>
                                    

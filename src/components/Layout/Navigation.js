@@ -8,6 +8,7 @@ import About from "../about/About";
 import Contact from "../contact/Contact";
 import Webdesign from "../portfolio/webDesign/WebDesign";
 import GraphicDesign from "../portfolio/graphicDesign/GraphicDesign";
+import ReCycle from "../portfolio/webDesign/ReCycle";
 
 function Navigation() {
     return (
@@ -52,6 +53,7 @@ function Navigation() {
                     <Route path="/contact" component={Contact}/>
                     <Route path="/webdesign" component={Webdesign} />
                     <Route path="/graphicdesign" component={GraphicDesign} />
+                    <Route path="/recycle" exact component={ReCycle} />
                 
                 </Switch>
             </Router>
