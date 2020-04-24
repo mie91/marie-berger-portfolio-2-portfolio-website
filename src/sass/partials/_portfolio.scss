@@ -1,8 +1,9 @@
 //PORTAL MAIN PAGE/////
 .content-box-portfolio-portal {
-    background-color: $magenta;
+    
     .subHeader {
         text-align: center;
+        color: $purple;
     }
 }
 
@@ -27,24 +28,30 @@
         border-radius: 15px;
         transition: $basic-transition;
 
-        &:hover {
-             border: $basic-purple;
-        }
+       
 
     }
 
     .subHeader {
         margin-top: 5px;
         margin-bottom: 5px;
-        font-size: 1.5em;
-        color: $bright;
+        font-size: 1.2em;
+        color: $pink;
+        text-transform: uppercase;
+        border-bottom: $basic-purple;
     }
 
     &:hover {
-        transform: translatey(5%);
         transition: $basic-transition;
+        animation-name: beat;
+        animation-duration: 1000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 999;
        
     }
+
+    
 
     a:hover {
         text-decoration: none;
