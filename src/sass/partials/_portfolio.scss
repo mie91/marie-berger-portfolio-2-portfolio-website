@@ -55,15 +55,33 @@
 
 //PORTFOLIO ELEMENT PAGES//
 .content-box.content-box-portfolio{
-    text-align: center;
+    
+    background-color: $bright;
 
     .mainHeader {
         margin-bottom: 2px;
     }
+
+    .subHeader {
+        text-align: center;
+    }
+}
+
+.carousel-col {
+    @include basic-shadow;    
+}
+
+.image-gallery {
+    margin: 0 auto;
+    width: 60%;
+    transition: all 1s ease;
 }
 
 
 
+.button-list.portfolio {
+    padding-top: 12px;
+}
 
 
 
