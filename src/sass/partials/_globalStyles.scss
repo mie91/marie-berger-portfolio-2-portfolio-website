@@ -26,6 +26,17 @@ html {
     }
 }
 
+ .inverted a {
+     background-color: $dark;
+     color: $pink;
+     margin-bottom: 10px;
+
+     &:hover {
+         background-color: $magenta;
+         color: $bright;
+     }
+ }
+
 //List Styles//
 .info-list {
     padding-left: 0;
