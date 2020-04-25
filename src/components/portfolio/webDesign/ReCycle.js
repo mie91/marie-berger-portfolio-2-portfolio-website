@@ -1,44 +1,21 @@
 import React from 'react';
-import { Container, Col, Row, Image, Card, Accordion } from "react-bootstrap";
+import { Container, Col, Row, Card, Accordion } from "react-bootstrap";
 import MainHeader from "../../layout/MainHeader";
 import SubHeader from "../../layout/SubHeader";
 import BackToTop from "../../layout/BackToTop";
 import ImageGallery from 'react-image-gallery';
+import {imagesReCycle} from "./images/imagesReCycle";
 
 
-const images = [
-  {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
-  },
-  {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
-  },
-    {
-        original: 'https://picsum.photos/id/1018/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-        original: 'https://picsum.photos/id/1011/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1011/1000/600/',
-    },
-    
-];
+
 
 class PortfolioGallery extends React.Component {
   render() {
     return <ImageGallery 
-                    items={images}
+                    items={imagesReCycle}
                     autoPlay={false} 
-                    showPlayButton={false}
-                    
-                    
-            />;
+                    showPlayButton={false}     
+            />;      
   }
 }
 
@@ -98,10 +75,10 @@ function ReCycle() {
                                     <ul className="button-list portfolio">
                                         <SubHeader title="Links" />
                                         <li>
-                                            <div className="mainButton"> <a href="/">Web Version</a></div>
+                                            <div className="mainButton"> <a href="https://unruffled-ritchie-b46d79.netlify.app/">Web Version</a></div>
                                         </li>
                                         <li>
-                                            <div className="mainButton"> <a href="/">Git Hub</a></div>
+                                            <div className="mainButton"> <a href="https://github.com/mie91/marie-berger-portfolio-2-html-and-css-ca">Git Hub</a></div>
                                         </li>
                                     </ul>
 
