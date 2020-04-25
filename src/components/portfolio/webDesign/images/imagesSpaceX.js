@@ -1,15 +1,24 @@
 export const imagesSpaceX = [{
-        original: 'https://picsum.photos/id/1018/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1018/250/150/',
+        original: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex1.jpg",
+        thumbnail: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex1.jpg",
     },
     {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        original: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex2.jpg",
+        thumbnail: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex2.jpg",
     },
     {
-        original: 'https://picsum.photos/id/1019/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1019/250/150/',
+        original: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex3.jpg",
+        thumbnail: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex3.jpg",
     },
+    {
+        original: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex4.jpg",
+        thumbnail: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex4.jpg",
+    },
+    {
+        original: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex5.jpg",
+        thumbnail: "http://badponydesigns.com/images_global/portfolio_page/react_images/spacex/spacex5.jpg",
+    },
+    
 
 ];
 
