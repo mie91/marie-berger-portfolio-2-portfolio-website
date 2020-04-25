@@ -3,9 +3,9 @@ import { Container, Row, Card,} from "react-bootstrap";
 import MainHeader from "../../layout/MainHeader";
 import SubHeader from "../../layout/SubHeader";
 import BackToTop from "../../layout/BackToTop";
-import SpaceX from "../../../assets/images/spaceX_1.jpg";
-import Recycle from "../../../assets/images/recycle_1.jpg";
-import Gameof from "../../../assets/images/gameof_1.jpg";
+import SpaceXThumb from "../../../assets/images/spaceX_1.jpg";
+import RecycleThumb from "../../../assets/images/recycle_1.jpg";
+import GameofThumb from "../../../assets/images/gameof_1.jpg";
 
 function WebDesign () {
 return (
@@ -18,7 +18,7 @@ return (
                     <Row className="justify-content-center">
 
                         <Card className="portfolio-portal-card">
-                            <a href="/recycle"><Card.Img variant="top" src={Recycle} alt="screenshot from project" />
+                            <a href="/recycle"><Card.Img variant="top" src={RecycleThumb} alt="screenshot from project" />
                                 <Card.Body>
                                    <SubHeader title="Re-Cycle"/>
                                    
@@ -26,7 +26,7 @@ return (
                             </Card>
                         
                         <Card className="portfolio-portal-card">
-                            <a href="/"><Card.Img variant="top" src={SpaceX} alt="screenshot from project" />
+                            <a href="/spacexmicro"><Card.Img variant="top" src={SpaceXThumb} alt="screenshot from project" />
                                 <Card.Body>
                                 <SubHeader title="SpaceX" />
                                     
@@ -36,7 +36,7 @@ return (
 
                         
                             <Card className="portfolio-portal-card">
-                            <a href="/"><Card.Img variant="top" src={Gameof} alt="screenshot from project" />
+                            <a href="/gameoftubbies"><Card.Img variant="top" src={GameofThumb} alt="screenshot from project" />
                                 <Card.Body>
                                 <SubHeader title="Game Of Tubbies" />
                                     

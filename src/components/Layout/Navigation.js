@@ -9,6 +9,8 @@ import Contact from "../contact/Contact";
 import Webdesign from "../portfolio/webDesign/WebDesign";
 import GraphicDesign from "../portfolio/graphicDesign/GraphicDesign";
 import ReCycle from "../portfolio/webDesign/ReCycle";
+import SpaceXMicro from "../portfolio/webDesign/SpaceXMicro";
+import GameOfTubbies from "../portfolio/webDesign/GameOfTubbies";
 
 function Navigation() {
     return (
@@ -54,6 +56,8 @@ function Navigation() {
                     <Route path="/webdesign" component={Webdesign} />
                     <Route path="/graphicdesign" component={GraphicDesign} />
                     <Route path="/recycle" exact component={ReCycle} />
+                    <Route path="/spacexmicro" exact component={SpaceXMicro} />
+                    <Route path="/gameoftubbies" exact component={GameOfTubbies} />
                 
                 </Switch>
             </Router>
