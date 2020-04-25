@@ -1,21 +1,37 @@
+//Styles for the "Layout" Components//
+
+//Navbar - General//
 .navbar {
     background-color: transparent;
     padding: 7px;
 }
 
-.navbar-toggler, .collapsed {
+.navbar-toggler,
+.collapsed {
     background-color: rgba($color: $magenta, $alpha: 0.4)
-} 
+}
 
+span.navbar-brand {
+    padding: 10px;
+}
+
+.dropdown-menu.show {
+    background-color: $dark;
+    border: none;
+}
+
+
+//Navbar - Links//
 .theNavlinks {
-    #nav-link, .dropdown {
+    #nav-link,
+    .dropdown {
         color: $purple;
         letter-spacing: 5px;
         text-transform: lowercase;
         margin: 15px;
-        font-weight: 600;   
+        font-weight: 600;
         transition: $basic-transition;
-    
+
         &.active {
             color: $magenta;
         }
@@ -24,27 +40,25 @@
             color: $bright;
             text-decoration: none;
             transition: $basic-transition;
-            
         }
     }
-
+//Dropdown Menu//
     .dropdown-item {
         border-left: $basic-purple;
-        
-        &:hover{
+
+        &:hover {
             background-color: transparent;
             border-left: $basic-bright;
             transform: translatex(5%);
             transition: $basic-transition;
-        } 
-
-        
+        }
     }
 
     .dropdown-toggle.nav-link {
         padding: 0px;
         margin: 0px 10px;
         color: $purple;
+
         &.active {
             color: $magenta;
         }
@@ -61,19 +75,8 @@
     }
 }
 
-span.navbar-brand {
-    padding: 10px;
-}
 
-
-.dropdown-menu.show {
-    background-color: $dark;
-    border: none;
-}
-
-
-
-//FOOTER//
+//The Footer//
 .footercontent {
     background-color: transparent;
     padding: 10px;
@@ -85,6 +88,38 @@ span.navbar-brand {
         color: $magenta;
     }
 }
+
+
+//The "Back To Top" Button//
+.to-top-container {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.return-top-btn {
+    background-color: rgba($color: $bright, $alpha: 0.1);
+    padding: 5px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+
+    &:hover {
+        background-color: rgba($color: $bright, $alpha: 0.2);
+        animation-name: beat;
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 
 //MEDIA QUIERIES//
 @media screen and (min-width: 577px) {
@@ -109,39 +144,8 @@ span.navbar-brand {
         }
     }
 
-     .dropdown-menu.show {
+    .dropdown-menu.show {
         background-color: transparent;
-     }
-
-}
-
-
-//BACK TO TOP BUTTON//
-.to-top-container {
-    display: block;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.return-top-btn {
-    background-color: rgba($color: $bright, $alpha: 0.1);
-    padding: 5px;
-    border:none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-
-    &:hover {
-        background-color: rgba($color: $bright, $alpha: 0.2);
-        animation-name: beat;
-        animation-duration: 800ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;  
     }
 
-    img {
-        width: 40px;
-        height: 40px;
-    }
 }

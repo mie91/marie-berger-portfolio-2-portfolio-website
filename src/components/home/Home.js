@@ -9,15 +9,14 @@ function Home () {
                 <Container>
                     <Row>
                         <Col className="col-md-12">
-                <div className="hugeLogo d-flex justify-content-center">
-                    <Image fluid src={HugeLogo} alt="Employees at Re-Cycle office" />
-                </div>
+                        <div className="hugeLogo d-flex justify-content-center">
+                            <Image fluid src={HugeLogo} alt="Employees at Re-Cycle office"/>
+                        </div>
                         </Col>
                     </Row>
-                
                 </Container>
             </div>
-       </>
+        </>
     );
 }
 export default Home;

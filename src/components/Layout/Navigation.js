@@ -16,31 +16,29 @@ function Navigation() {
     return (
         <>
             <Router>
-                <Navbar collapseOnSelect expand="sm" >
-                    <Navbar.Toggle  aria-controls="responsive-navbar-nav " />
+                <Navbar collapseOnSelect expand="sm">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav "/>
                     <NavLink to="/" exact>
-                    <img alt="" src={NavLogo} width="120" height="80" className="second-brand" />
+                        <img alt="" src={NavLogo} width="120" height="80" className="second-brand"/>
                     </NavLink>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <NavLink to="/" exact>
-                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogoText} width="110" height="25" className="d-inline-block align-top" /></Navbar.Brand>
+                            <Navbar.Brand> <img alt="Bad Pony logo" src={NavLogoText} width="110" height="25"
+                                    className="d-inline-block align-top" />
+                            </Navbar.Brand>
                         </NavLink>
                         <Nav className="navbar-nav ml-auto theNavlinks">
                             <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-                            
                                 <NavDropdown.Item href="/webdesign" id="nav-link">Webdesign</NavDropdown.Item>
-
-                                <NavDropdown.Item href="/graphicdesign" id="nav-link">Graphic Designs</NavDropdown.Item>
-
-                                <NavDropdown.Item disabled href="/photo" id="nav-link">Photo (coming soon)</NavDropdown.Item>
-
-                                
-                                <NavDropdown.Item disabled href="/other" id="nav-link">Art (coming soon)</NavDropdown.Item>
+                                <NavDropdown.Item disabled href="/graphicdesign" id="nav-link">Graphic Designs (coming soon)</NavDropdown.Item>
+                                <NavDropdown.Item disabled href="/photo" id="nav-link">Photo (coming soon)
+                                </NavDropdown.Item>
+                                <NavDropdown.Item disabled href="/other" id="nav-link">Art (coming soon)
+                                </NavDropdown.Item>
                             </NavDropdown>
                             <NavLink to="/about" id="nav-link">
                                 About me
                             </NavLink>
-                            
                             <NavLink to="/contact" id="nav-link">
                                 Contact
                             </NavLink>
@@ -52,13 +50,12 @@ function Navigation() {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact}/>
+                    <Route path="/contact" component={Contact} />
                     <Route path="/webdesign" component={Webdesign} />
                     <Route path="/graphicdesign" component={GraphicDesign} />
                     <Route path="/recycle" exact component={ReCycle} />
                     <Route path="/spacexmicro" exact component={SpaceXMicro} />
                     <Route path="/gameoftubbies" exact component={GameOfTubbies} />
-                
                 </Switch>
             </Router>
             <footer>

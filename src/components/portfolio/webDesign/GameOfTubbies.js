@@ -7,8 +7,6 @@ import ImageGallery from 'react-image-gallery';
 import {imagesGameOf} from "./images/imagesGameOf";
 
 
-
-
 class PortfolioGallery extends React.Component {
   render() {
     return <ImageGallery 
@@ -18,7 +16,6 @@ class PortfolioGallery extends React.Component {
             />;      
   }
 }
-
 
 function GameOfTubbies() {
     return (
@@ -36,7 +33,7 @@ function GameOfTubbies() {
                         <Row className="justify-content-md-center">
                             <Col className="col-md-5 accordion-col">
                             <div className="text-box">
-                                <Accordion defaultActiveKey="0" className="aboutAccord">
+                                <Accordion defaultActiveKey="0" className="infoAccord">
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="0">
                                             <SubHeader title="Description" />
@@ -45,23 +42,20 @@ function GameOfTubbies() {
                                             <Card.Body>
                                                     <p>We were to build an online board game for Game of Thrones, and it had to be
                                                     made
-                                                    using HTML, CSS and JavaScript.
-                                                    </p>
-                                                    
+                                                    using HTML, CSS and JavaScript.</p>                                        
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
-
                                     <Card>
                                         <Accordion.Toggle as={Card.Header} eventKey="1">
                                             <SubHeader title="Comment" />
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
                                             <Card.Body>
-                                                    The game play is almost none existent, and I would love to add
+                                                    <p>The game play is almost none existent, and I would love to add
                                                     more elements later, such as 2 player, more variations in traps, sounds and a more
                                                     exciting board. I would also like to update the character designs (faces especially) as I
-                                                    did not have a lot of time to spend on them as I would like.
+                                                    did not have a lot of time to spend on them as I would like.</p>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -71,7 +65,7 @@ function GameOfTubbies() {
                             <Col className="col-md-4">
                                 <div className="text-box">
                                     <ul className="button-list portfolio">
-                                        <SubHeader title="Links" />
+                                        <SubHeader title="Links"/>
                                         <li>
                                             <div className="mainButton"> <a href="http://badponydesigns.com/year2_exam/index.html">Web Version</a></div>
                                         </li>
@@ -79,7 +73,6 @@ function GameOfTubbies() {
                                             <div className="mainButton"> <a href="https://github.com/mie91/year2_exam/tree/the-main">Git Hub</a></div>
                                         </li>
                                     </ul>
-
                                     <SubHeader title="Details" />
                                     <ul className="info-list">
                                         <li><b>Created</b>: Winter 2019</li>
@@ -91,12 +84,11 @@ function GameOfTubbies() {
                                         <li>Character Design</li>
                                         <li>Responsive</li>
                                     </ul>
-                    
                                 </div>
                             </Col>
                         </Row>
                     </div>
-                    <BackToTop />
+                <BackToTop/>
                 </Container>
             </div>
         </>

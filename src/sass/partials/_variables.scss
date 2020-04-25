@@ -12,9 +12,9 @@ $textFont: 'Montserrat',sans-serif;
 //Static Gradients//
 $dark-lighter-gradient: linear-gradient(72deg, rgba(39, 36, 36, 1) 43%, rgba(77, 68, 68, 0.7) 100%);
 
-
 //Borders//
-$bah: solid 3px magenta;
+$bah: solid 3px magenta; //Only used for visual selection of elements//
+
 $basic-purple: solid 2px $purple;
 $bold-purple: solid 7px $purple;
 

@@ -1,8 +1,8 @@
-//Background Animated 
+//Mixins//
+//Background Animated Gradients//
 @mixin dark-gradient {
     background: linear-gradient(84deg, #272424, #161215, #272424);
     background-size: 600% 600%;
-
     -webkit-animation: dark-gradient 9s ease infinite;
     -moz-animation: dark-gradient 9s ease infinite;
     animation: dark-gradient 9s ease infinite;
@@ -26,13 +26,29 @@
     }
 }
 
+//Box Shadow effect//
+@mixin basic-shadow {
+    filter: drop-shadow(7px 7px 7px #000000);
+    -webkit-filter: drop-shadow(7px 7px 7px #000000);
+}
 
+//Fix Chrome autofill input background
+@keyframes autofill {
 
+    0%,
+    100% {
+        color: $bright;
+        background: transparent;
+    }
+}
+
+//Animations//
 //Animated size increased
 @keyframes bigger {
     0% {transform: scale(0.05);}
     100% {transform: scale(1.0);}
 }
+
 //Animated Beat
 @keyframes beat {
     0% {
@@ -41,55 +57,12 @@
     30% {
         transform: scale(1.2);
     }
-
     70% {
         transform: scale(1.0);
     }
 }
 
 
-//Animated Shake
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-//Box Shadow
-
-@mixin basic-shadow {
-    filter: drop-shadow(7px 7px 7px #000000);
-    -webkit-filter: drop-shadow(7px 7px 7px #000000);
-    
-}
-
-//Spin animation//
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-//Fix Chrome autofill input background
-@keyframes autofill {
-    0%,
-    100% {
-        color: $bright;
-        background: transparent;
-    }
-}
 
 
 

@@ -1,8 +1,9 @@
+//Global GLOBAL styles//
 html {
     background-color: $dark;
 }
 
-
+//General Buttons//
 .mainButton {
 
     display: inline-flex;
@@ -24,3 +25,96 @@ html {
         }
     }
 }
+
+//List Styles//
+.info-list {
+    padding-left: 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+
+    li {
+        display: inline-flex;
+        background-color: $purple;
+        padding: 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    li:nth-child(even) {
+        background: $bright;
+        color: $dark;
+    }
+}
+
+.skills-list {
+    padding-left: 0;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+
+    li {
+        display: inline-flex;
+        background-color: $purple;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    li:nth-child(odd) {
+        background: $bright;
+        color: $dark;
+    }
+}
+
+//List of Clickable Buttons, Inline//
+.button-list {
+    text-align: center;
+    padding: 0px;
+
+    li {
+        list-style: none;
+        display: inline-flex;
+        margin: 10px;
+    }
+}
+
+
+
+//Accordion//
+.infoAccord {
+    .subHeader {
+        transition: $basic-transition;
+
+        &:hover {
+            color: $bright;
+            transform: translatex(5%);
+            transition: $basic-transition;
+        }
+    }
+
+    .card {
+        border: none;
+        border-radius: 1px;
+        background-color: transparent;
+        margin-top: 10px;
+        cursor: pointer;
+        border-left: solid 5px $purple;
+        transition: $basic-transition;
+
+        &:hover {
+            border-left: solid 5px $bright;
+            color: $bright;
+            transition: $basic-transition;
+        }
+    }
+
+    div.card-header {
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+
+//MEDIA QUIERIES//
+@media screen and (min-width: 576px) {}
+
+@media screen and (max-width: 575px) {}

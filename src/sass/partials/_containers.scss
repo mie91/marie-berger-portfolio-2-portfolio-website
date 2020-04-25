@@ -1,4 +1,4 @@
-
+//Main Container (Furthest out)//
 .main-container {
     margin-top: -720px;
     padding-top: 720px;
@@ -19,7 +19,7 @@
     }
 }
 
-
+//Content Box - The "3D" card with all main content//
 .content-box {
     margin: 30px 0px;
     padding: 30px 15px;
@@ -36,8 +36,8 @@
     
 }
 
+//Social Media Link and Icon container//
 .icon-container {
-
     a {
         display: inline-flex;
         margin: 0px 10px 0px 0px;
@@ -47,52 +47,14 @@
             animation-duration: 500ms;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
-            
-        }
-    }
-
-}
-
-.button-list {
-    text-align: center;
-    padding: 0px;
-
-    li {
-        list-style: none;
-        display: inline-flex;
-        margin: 10px;
-        
-
-    }
-}
-
-.mainButton {
-    
-    display: inline-flex;
-    a {
-        background-color: $magenta;
-        padding: 10px;
-        color: $bright;
-
-        &:hover {
-            background-color: $dark;
-            color: $pink;
-            text-decoration: none;
         }
     }
 }
-
-
-
-
-
 
 
 
 //MEDIA QUIERIES//
-@media screen and (min-width: 577px) {
-    
-}
+@media screen and (min-width: 577px) {}
 
 @media screen and (max-width: 577px) {
      .info-list {

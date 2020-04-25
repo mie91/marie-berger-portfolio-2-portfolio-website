@@ -1,17 +1,18 @@
+//Global Styles// 
 @import "./partials/variables";
 @import "./partials/mixins";
-
-
 @import "./partials/globalStyles";
+
+//General Styles//
 @import "./partials/typography";
 @import "./partials/containers";
 @import "./partials/images";
+
+//Component Specific Styles//
 @import "./partials/layout";
-
-
 @import "./partials/about";
 @import "./partials/contact";
 @import "./partials/portfolio";
 
-
+//SASS Import for "React-Image-Gallery"//
 @import "~react-image-gallery/styles/scss/image-gallery.scss";

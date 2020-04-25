@@ -1,3 +1,4 @@
+//Intro page, animated logo//
 .hugeLogo img {
     padding: 8vh;
     width: 1200px;
@@ -8,7 +9,7 @@
     -webkit-filter: drop-shadow(7px 7px 7px #000000);
 }
 
-
+//Profile Image on "About" page//
 .profileImage {
     img {
         border-radius: 2%;
@@ -16,3 +17,8 @@
         border: $basic-pink;
     }
 }
+
+//MEDIA QUIERIES//
+@media screen and (min-width: 576px) {}
+
+@media screen and (max-width: 575px) {}

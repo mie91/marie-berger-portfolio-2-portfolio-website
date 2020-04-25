@@ -6,10 +6,9 @@ const BackToTop = function () {
         window.scrollTo({ behavior: "smooth", top: 0 });
     }
 
-    return <div className="to-top-container">
-        <button className="return-top-btn" onClick={ScrollToTop}><img className="btnIcon" src={IconUp} alt="Up arrow" />
-        </button>
-    </div>;
+    return  <div className="to-top-container">
+                <button className="return-top-btn" onClick={ScrollToTop}><img className="btnIcon" src={IconUp} alt="Up arrow" /></button>
+            </div>;
 };
 
 export default BackToTop;

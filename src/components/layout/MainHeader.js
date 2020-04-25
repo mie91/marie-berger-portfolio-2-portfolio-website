@@ -7,8 +7,8 @@ function MainHeader ({title}) {
     );
 }
 
-MainHeader.propTypes = {
-     title: PropTypes.string.isRequired
-};
+    MainHeader.propTypes = {
+        title: PropTypes.string.isRequired
+    };
 
 export default MainHeader;

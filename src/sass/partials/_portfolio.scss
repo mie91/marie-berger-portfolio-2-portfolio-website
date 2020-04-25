@@ -1,6 +1,7 @@
-//PORTAL MAIN PAGE/////
-.content-box-portfolio-portal {
+//Styles for the Portfolio Components//@extend
 
+//The Portfolio Portal Page//
+.content-box-portfolio-portal {
     .subHeader {
         text-align: center;
         color: $purple;
@@ -9,7 +10,6 @@
 
 .card.portfolio-portal-card {
     text-align: center;
-
     margin: 10px;
     margin-bottom: 4vw;
     padding: 0px;
@@ -51,11 +51,8 @@
     }
 }
 
-
-
-//PORTFOLIO ELEMENT PAGES//
+//The Portfolio Project Detail Components/
 .content-box.content-box-portfolio{
-    
     background-color: $bright;
 
     .mainHeader {
@@ -67,6 +64,11 @@
     }
 }
 
+.button-list.portfolio {
+    padding-top: 23px;
+}
+
+//Styles for the React-Image-Gallery Carousel//
 .carousel-col {
     @include basic-shadow;    
 }
@@ -77,24 +79,9 @@
     transition: all 1s ease;
 }
 
-.button-list.portfolio {
-    padding-top: 23px;
-}
-
-
-
-
-
-
-
-
 
 
 //MEDIA QUIERIES//
 @media screen and (min-width: 578px) {}
 
-@media screen and (max-width: 577px) {
-    .info-list {
-        text-align: center;
-    }
-}
+@media screen and (max-width: 577px) {}
