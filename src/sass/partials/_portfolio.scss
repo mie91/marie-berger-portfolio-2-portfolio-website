@@ -73,14 +73,12 @@
 
 .image-gallery {
     margin: 0 auto;
-    width: 60%;
+    width: 65%;
     transition: all 1s ease;
 }
 
-
-
 .button-list.portfolio {
-    padding-top: 12px;
+    padding-top: 23px;
 }
 
 
@@ -93,6 +91,10 @@
 
 
 //MEDIA QUIERIES//
-@media screen and (min-width: 577px) {}
+@media screen and (min-width: 578px) {}
 
-@media screen and (max-width: 577px) {}
+@media screen and (max-width: 577px) {
+    .info-list {
+        text-align: center;
+    }
+}

@@ -24,8 +24,8 @@ const images = [
         thumbnail: 'https://picsum.photos/id/1018/250/150/',
     },
     {
-        original: 'https://picsum.photos/id/1015/1000/600/',
-        thumbnail: 'https://picsum.photos/id/1015/250/150/',
+        original: 'https://picsum.photos/id/1011/1000/600/',
+        thumbnail: 'https://picsum.photos/id/1011/1000/600/',
     },
     
 ];
@@ -96,6 +96,7 @@ function ReCycle() {
                             <Col className="col-md-4">
                                 <div className="text-box">
                                     <ul className="button-list portfolio">
+                                        <SubHeader title="Links" />
                                         <li>
                                             <div className="mainButton"> <a href="/">Web Version</a></div>
                                         </li>
@@ -106,10 +107,12 @@ function ReCycle() {
 
                                     <SubHeader title="Details" />
                                     <ul className="info-list">
-                                        <li><b>Created </b>: 2020</li>
-                                        <li><b> </b>: 2020</li>
-                                        <li><b>Created </b>: 2020</li>
-                                        <li><b>Created </b>: 2020</li>
+                                        <li><b>Created</b>: April, 2020</li>
+                                        <li>School Project</li>
+                                        <li>React</li>
+                                        <li>Bootstrap</li>
+                                        <li>SASS</li>
+                                        
                                     </ul>
 
                                     
