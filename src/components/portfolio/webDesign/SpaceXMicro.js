@@ -26,7 +26,7 @@ function SpaceXMicro() {
             <div className="main-container dark">
                 <Container>
                     <div className="content-box content-box-portfolio">
-                        <MainHeader title="re-cycle"/>
+                        <MainHeader title="SpaceX"/>
                         <SubHeader title="School Project" />
                         <Row className="justify-content-md-center">
                             <Col className="col-md-12 carousel-col">
@@ -43,12 +43,17 @@ function SpaceXMicro() {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
                                             <Card.Body>
-                                                <p>Quis ex est laboris eiusmod cupidatat. Magna sit velit cupidatat laboris.
-                                                    Officia deserunt dolore minim aliquip mollit duis culpa ad. In incididunt
-                                                    occaecat
-                                                    aute ex ullamco aute. Ipsum dolore nulla elit adipisicing dolor esse
-                                                    exercitation
-                                                    cupidatat eiusmod nulla.</p>
+                                                    <p>We were to build an online microsite for SpaceX or NASA (I chose SpaceX), to raise
+                                                    awareness about space program activity around the world. The site should appeal to
+                                                    a specific target audience and provide links to more information, live feeds of launches, and so forth</p>
+                                                    <p><b>Some of the requirements</b></p>
+                                                    <ul>
+                                                        <li>Create a microsite for SpaceX/NASA The site should include a minimum of (4)
+pages, be responsive, and function well on a variety of platforms.</li>
+                                                        <li>The site should employ Javascript/JSON API for dynamic data</li>
+                                                        <li>An HTML5 contact form with Javascript validation is required.</li>
+                                                        <li>Conform to WCAG standards.</li>
+                                                    </ul>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -59,11 +64,14 @@ function SpaceXMicro() {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
                                             <Card.Body>
-                                                Anim adipisicing sint quis nulla id. Fugiat dolore minim duis nulla
-                                                deserunt cillum amet do labore. Sint amet fugiat labore esse dolore pariatur est
-                                                cupidatat et veniam. Magna duis irure mollit ullamco et exercitation in est
-                                                dolore magna ipsum. Officia ut minim sint ea irure consequat cillum anim irure
-                                                amet elit do. Laboris veniam eu amet amet.
+                                                    <p>My idea for the target audience is mainly adults/young adults whom are
+                                                    looking for an introduction to SpaceX, and the micro site will serve as a portal to
+                                                    “SpaceX knowledge”. They might not be familiar with the company at all, but are
+                                                    curious about their goals and missions.</p>
+                                                    <p>Known faults: The nav-bar links is not center aligned on mobile devices.</p>
+                                                    <p>
+                                                    <i>NB! Some of the information on the page might be outdated as the JSON file has
+been updated since summer 2019. </i></p>
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -75,20 +83,21 @@ function SpaceXMicro() {
                                     <ul className="button-list portfolio">
                                         <SubHeader title="Links" />
                                         <li>
-                                            <div className="mainButton"> <a href="https://unruffled-ritchie-b46d79.netlify.app/">Web Version</a></div>
+                                            <div className="mainButton"> <a href="http://badponydesigns.com/exam/">Web Version</a></div>
                                         </li>
                                         <li>
-                                            <div className="mainButton"> <a href="https://github.com/mie91/marie-berger-portfolio-2-html-and-css-ca">Git Hub</a></div>
+                                            <div className="mainButton"> <a href="https://github.com/mie91/2019-06-16_project_exam_repository_clean_version_mhb">Git Hub</a></div>
                                         </li>
                                     </ul>
 
                                     <SubHeader title="Details" />
                                     <ul className="info-list">
-                                        <li><b>Created</b>: April, 2020</li>
+                                        <li><b>Created</b>: Spring, 2019</li>
                                         <li>School Project</li>
-                                        <li>React</li>
-                                        <li>Bootstrap</li>
-                                        <li>SASS</li>
+                                        <li>Vanilla Javascript</li>
+                                        <li>API</li>
+                                        <li>CSS</li>
+                                        <li>Responsive</li>
                                         
                                     </ul>
 

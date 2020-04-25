@@ -89,6 +89,7 @@ function ReCycle() {
                                         <li>React</li>
                                         <li>Bootstrap</li>
                                         <li>SASS</li>
+                                        <li>Responsive</li>
                                         
                                     </ul>
 

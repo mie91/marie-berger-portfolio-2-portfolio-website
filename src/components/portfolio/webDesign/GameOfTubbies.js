@@ -26,7 +26,7 @@ function GameOfTubbies() {
             <div className="main-container dark">
                 <Container>
                     <div className="content-box content-box-portfolio">
-                        <MainHeader title="re-cycle"/>
+                        <MainHeader title="game of tubbies"/>
                         <SubHeader title="School Project" />
                         <Row className="justify-content-md-center">
                             <Col className="col-md-12 carousel-col">
@@ -43,12 +43,11 @@ function GameOfTubbies() {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
                                             <Card.Body>
-                                                <p>Quis ex est laboris eiusmod cupidatat. Magna sit velit cupidatat laboris.
-                                                    Officia deserunt dolore minim aliquip mollit duis culpa ad. In incididunt
-                                                    occaecat
-                                                    aute ex ullamco aute. Ipsum dolore nulla elit adipisicing dolor esse
-                                                    exercitation
-                                                    cupidatat eiusmod nulla.</p>
+                                                    <p>We were to build an online board game for Game of Thrones, and it had to be
+                                                    made
+                                                    using HTML, CSS and JavaScript.
+                                                    </p>
+                                                    
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -59,11 +58,10 @@ function GameOfTubbies() {
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="1">
                                             <Card.Body>
-                                                Anim adipisicing sint quis nulla id. Fugiat dolore minim duis nulla
-                                                deserunt cillum amet do labore. Sint amet fugiat labore esse dolore pariatur est
-                                                cupidatat et veniam. Magna duis irure mollit ullamco et exercitation in est
-                                                dolore magna ipsum. Officia ut minim sint ea irure consequat cillum anim irure
-                                                amet elit do. Laboris veniam eu amet amet.
+                                                    The game play is almost none existent, and I would love to add
+                                                    more elements later, such as 2 player, more variations in traps, sounds and a more
+                                                    exciting board. I would also like to update the character designs (faces especially) as I
+                                                    did not have a lot of time to spend on them as I would like.
                                             </Card.Body>
                                         </Accordion.Collapse>
                                     </Card>
@@ -75,24 +73,25 @@ function GameOfTubbies() {
                                     <ul className="button-list portfolio">
                                         <SubHeader title="Links" />
                                         <li>
-                                            <div className="mainButton"> <a href="https://unruffled-ritchie-b46d79.netlify.app/">Web Version</a></div>
+                                            <div className="mainButton"> <a href="http://badponydesigns.com/year2_exam/index.html">Web Version</a></div>
                                         </li>
                                         <li>
-                                            <div className="mainButton"> <a href="https://github.com/mie91/marie-berger-portfolio-2-html-and-css-ca">Git Hub</a></div>
+                                            <div className="mainButton"> <a href="https://github.com/mie91/year2_exam/tree/the-main">Git Hub</a></div>
                                         </li>
                                     </ul>
 
                                     <SubHeader title="Details" />
                                     <ul className="info-list">
-                                        <li><b>Created</b>: April, 2020</li>
+                                        <li><b>Created</b>: Winter 2019</li>
                                         <li>School Project</li>
-                                        <li>React</li>
-                                        <li>Bootstrap</li>
-                                        <li>SASS</li>
-                                        
+                                        <li>Vanilla Javascript</li>
+                                        <li>CSS</li>
+                                        <li>Game</li>
+                                        <li>Animation</li>
+                                        <li>Character Design</li>
+                                        <li>Responsive</li>
                                     </ul>
-
-                                    
+                    
                                 </div>
                             </Col>
                         </Row>
