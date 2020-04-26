@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, NavLink, } from "react-router-dom";
 import NavLogo from "../../assets/images/logo_small.png";
@@ -12,7 +12,7 @@ import ReCycle from "../portfolio/webDesign/ReCycle";
 import SpaceXMicro from "../portfolio/webDesign/SpaceXMicro";
 import GameOfTubbies from "../portfolio/webDesign/GameOfTubbies";
 
-function Navigation() {
+function Layout() {
     return (
         <>
             <Router>
@@ -69,4 +69,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Layout;
