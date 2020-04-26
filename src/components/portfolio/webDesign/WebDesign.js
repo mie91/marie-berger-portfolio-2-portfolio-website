@@ -18,7 +18,7 @@ return (
                     <Row className="justify-content-center">
 
                         <Card className="portfolio-portal-card">
-                            <a href="/recycle"><Card.Img variant="top" src={RecycleThumb} alt="screenshot from project" />
+                            <a to="/recycle"><Card.Img variant="top" src={RecycleThumb} alt="screenshot from project" />
                                 <Card.Body>
                                    <SubHeader title="Re-Cycle"/>
                                    
@@ -26,7 +26,7 @@ return (
                             </Card>
                         
                         <Card className="portfolio-portal-card">
-                            <a href="/spacexmicro"><Card.Img variant="top" src={SpaceXThumb} alt="screenshot from project" />
+                            <a to="/spacexmicro"><Card.Img variant="top" src={SpaceXThumb} alt="screenshot from project" />
                                 <Card.Body>
                                 <SubHeader title="SpaceX" />
                                     
@@ -36,7 +36,7 @@ return (
 
                         
                             <Card className="portfolio-portal-card">
-                            <a href="/gameoftubbies"><Card.Img variant="top" src={GameofThumb} alt="screenshot from project" />
+                            <a to="/gameoftubbies"><Card.Img variant="top" src={GameofThumb} alt="screenshot from project" />
                                 <Card.Body>
                                 <SubHeader title="Game Of Tubbies" />
                                     
