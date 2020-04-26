@@ -32,9 +32,6 @@ function Layout() {
                                 <NavDropdown.Item><NavLink to="/webdesign" id="nav-link">
                                 Webdesign
                             </NavLink></NavDropdown.Item>
-
-
-
                                 <NavDropdown.Item disabled href="/graphicdesign" id="nav-link">Graphic Designs (coming soon)</NavDropdown.Item>
                                 <NavDropdown.Item disabled href="/photo" id="nav-link">Photo (coming soon)
                                 </NavDropdown.Item>
@@ -60,7 +57,7 @@ function Layout() {
                     <Route path="/graphicdesign" component={GraphicDesign} />
                     <Route path="/recycle" component={ReCycle} />
                     <Route path="/spacexmicro" component={SpaceXMicro} />
-                    <Route path="/gameoftubbies" component={GameOfTubbies} />
+                    <Route path="/gameoftubbies" exact component={GameOfTubbies} />
                 </Switch>
             </Router>
             <footer>
