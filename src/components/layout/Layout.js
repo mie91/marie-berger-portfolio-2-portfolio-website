@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, NavLink, } from "react-router-dom";
 import NavLogo from "../../assets/images/logo_small.png";
@@ -12,7 +12,7 @@ import ReCycle from "../portfolio/webDesign/ReCycle";
 import SpaceXMicro from "../portfolio/webDesign/SpaceXMicro";
 import GameOfTubbies from "../portfolio/webDesign/GameOfTubbies";
 
-function Navigation() {
+function Layout() {
     return (
         <>
             <Router>
@@ -29,7 +29,9 @@ function Navigation() {
                         </NavLink>
                         <Nav className="navbar-nav ml-auto theNavlinks">
                             <NavDropdown title="Portfolio" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="/webdesign" id="nav-link">Webdesign</NavDropdown.Item>
+                                <NavDropdown.Item><NavLink to="/webdesign" id="nav-link">
+                                Webdesign
+                            </NavLink></NavDropdown.Item>
                                 <NavDropdown.Item disabled href="/graphicdesign" id="nav-link">Graphic Designs (coming soon)</NavDropdown.Item>
                                 <NavDropdown.Item disabled href="/photo" id="nav-link">Photo (coming soon)
                                 </NavDropdown.Item>
@@ -53,8 +55,8 @@ function Navigation() {
                     <Route path="/contact" component={Contact} />
                     <Route path="/webdesign" component={Webdesign} />
                     <Route path="/graphicdesign" component={GraphicDesign} />
-                    <Route path="/recycle" exact component={ReCycle} />
-                    <Route path="/spacexmicro" exact component={SpaceXMicro} />
+                    <Route path="/recycle" component={ReCycle} />
+                    <Route path="/spacexmicro" component={SpaceXMicro} />
                     <Route path="/gameoftubbies" exact component={GameOfTubbies} />
                 </Switch>
             </Router>
@@ -69,4 +71,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Layout;
